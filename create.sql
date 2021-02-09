@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS data_list;
+
+CREATE TABLE data_list(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    kancho_name VARCHAR(255),
+    date_text VARCHAR(255),
+    get_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    link_text VARCHAR(255),
+    link_url VARCHAR(2083)
+    
+)DEFAULT CHARACTER SET=utf8mb4;
+
